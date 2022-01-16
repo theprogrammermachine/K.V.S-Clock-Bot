@@ -76,10 +76,7 @@ module.exports = {
     })
     module.exports.registerEvent('disconnect', () => {
       console.log('socket disconnected.');
-      setTimeout(() => {
-        console.log('socket reconnecting...');
-        module.exports.connectSocket(connectionCallback);
-      }, 5000);
+      console.log('socket reconnecting...');
     });
   }
 };

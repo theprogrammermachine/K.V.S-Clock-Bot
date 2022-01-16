@@ -2,7 +2,7 @@
 const fetch = require('node-fetch');
 
 module.exports = {
-    initGui: async (gui, userId, widgetId, preview, roomId) => {
+    gui: async (type, gui, userId, widgetId, widgetWorkerId, preview, roomId) => {
         const { SESSION_TOKEN } = require('./data/auth');
         const { SERVER_ROOT } = require('./data/constants');
         let requestOptions = {
@@ -12,8 +12,10 @@ module.exports = {
               token: SESSION_TOKEN
             },
             body: JSON.stringify({
+                type: type,
                 userId: userId,
                 widgetId: widgetId,
+                widgetWorkerId: widgetWorkerId,
                 roomId: roomId,
                 preview: preview,
                 gui: gui
