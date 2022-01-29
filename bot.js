@@ -21,8 +21,8 @@ const {
     OPEN_WEATHER_MAP_CITY_NAME
 } = require('./constants');
 
-setBotId('5cc02a69-a35a-4063-b913-fafca7ca5653-1642190801490');
-setAuthToken('LPAHkdWUBiFKjszZWd0bh9zoHk2KQJFJnDNBVoLPHnd0c4NzmG3vPufHuGYpz4gE');
+setBotId('2ef3f6b0-fa6e-4019-a941-1550a9b67d4c-1643197607422');
+setAuthToken('BVlNUJZZuGSj24J7KIIVbYAzwSi6aebtxYskEp6KACxCJsDWdmeQm8sdjhLzr4Xq');
 
 let temperature, humidity;
 let checkWeather = async () => {
